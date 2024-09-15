@@ -131,4 +131,10 @@ export class UserService {
   }) {
     await this.firestore.collection('sms').add(smsData);
   }
+
+  async getTotalSmsCount(): Promise<number> {
+    const messagesSnapshot = await this.firestore.collection('sms').get();
+    return messagesSnapshot.size;
+  }
+
 }
