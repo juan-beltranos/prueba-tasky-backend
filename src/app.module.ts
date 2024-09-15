@@ -1,10 +1,9 @@
 import { Module } from '@nestjs/common';
-import { UsersModule } from './users/users.module'; 
+import { UsersModule } from './users/users.module';
 import { SmsModule } from './sms/sms.module';
-import { FirestoreModule } from './firestore/firestore.module'; 
+import { FirestoreModule } from './firestore/firestore.module';
 
 @Module({
-  imports: [UsersModule, SmsModule, FirestoreModule], 
- 
+  imports: [UsersModule, SmsModule, FirestoreModule],
 })
-export class AppModule { }
+export class AppModule {}

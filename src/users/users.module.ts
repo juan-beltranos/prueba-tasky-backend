@@ -4,9 +4,9 @@ import { UserController } from './users.controller';
 import { FirestoreModule } from '../firestore/firestore.module';
 
 @Module({
-    imports: [FirestoreModule],
-    providers: [UserService],
-    controllers: [UserController],
-    exports: [UserService],
+  imports: [FirestoreModule],
+  providers: [UserService],
+  controllers: [UserController],
+  exports: [UserService],
 })
-export class UsersModule { } 
+export class UsersModule {}
